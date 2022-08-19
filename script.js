@@ -254,7 +254,8 @@ function autocomplete(input, array){
     })
 }
 document.addEventListener("keydown", function(e){
-    e.preventDefault();
+    if(e.key==Enter){
+        e.preventDefault();}
 })
 
 autocomplete(document.getElementById("searchBookTitle"), bookTitleArray);
