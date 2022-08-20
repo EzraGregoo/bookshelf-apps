@@ -254,7 +254,7 @@ function autocomplete(input, array){
     })
 }
 document.addEventListener("keydown", function(e){
-    if(e.key==Enter){
+    if(e.key=="Enter"){
         e.preventDefault();}
 })
 
